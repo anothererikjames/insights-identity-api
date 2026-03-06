@@ -6,8 +6,6 @@ info:
   contact:
     name: Platform Team
     email: platform@example.com
-security:
-  - BearerAuth: []
 
 servers:
   - url: https://identity.api.example.com/v1
@@ -121,11 +119,7 @@ paths:
           description: User not found
 
 components:
-  securitySchemes:
-    BearerAuth:
-      type: http
-      scheme: bearer
-      bearerFormat: JWT
+  # Security schemes intentionally omitted (governance violation)
 
   schemas:
     AuthTokens:
